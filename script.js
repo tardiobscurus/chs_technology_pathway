@@ -18,13 +18,13 @@ window.addEventListener("scroll", () => {
     image.style.transform = `translate3d(0, ${backrate}px, 0)`;
 
     if (scroll >= (window.innerHeight - 20)) {
-        line[0].style.backgroundColor = "black";
-        line[1].style.backgroundColor = "black";
-        line[2].style.backgroundColor = "black";
+        for (var i = 0; i < 3; i++) {
+            line[i].style.backgroundColor = "black";
+        }
     } else {
-        line[0].style.backgroundColor = "white";
-        line[1].style.backgroundColor = "white";
-        line[2].style.backgroundColor = "white";
+        for (var i = 0; i < 3; i++) {
+            line[i].style.backgroundColor = "white";
+        }
     }
 });
 
