@@ -17,7 +17,7 @@ window.addEventListener("scroll", () => {
     title.style.transform = `translate3d(0, ${rate}px, 0)`;
     image.style.transform = `translate3d(0, ${backrate}px, 0)`;
 
-    if (scroll >= document.documentElement.scrollHeight) {
+    if (scroll >= window.innerHeight) {
         line[0].style.backgroundColor = "black";
         line[1].style.backgroundColor = "black";
         line[2].style.backgroundColor = "black";
