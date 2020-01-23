@@ -1,7 +1,7 @@
 const hamburger     = document.querySelector(".hamburger-nav");
 
 hamburger.addEventListener("click", () => {
-    alert("I've been clicked!")
+    alert(document.documentElement.clientHeight)
 });
 
 window.addEventListener("scroll", () => {
