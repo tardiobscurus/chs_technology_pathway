@@ -1,7 +1,12 @@
 const hamburger     = document.querySelector(".hamburger-nav");
+var isOpen = false;
 
 hamburger.addEventListener("click", () => {
-    alert((window.innerHeight - 20))
+    if (!isOpen) {
+        isOpen = true;
+    } else {
+        isOpen = false;
+    }
 });
 
 window.addEventListener("scroll", () => {
