@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap');
+
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 200vh;
+    background: #eee;
+}
+
+.hamburger-nav {
+    position: fixed;
+    z-index: 5;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+
+    div {
+        width: 25px;
+        height: 3px;
+        margin-top: 5px;
+        background: white;
+        transform: translateY(5px);
+    }
+
+    .line {
+        opacity: 0;
+    }
+
+    .line:nth-child(1) {
+        animation: showOnStart forwards 1s;
+    }
+    .line:nth-child(2) {
+        animation: showOnStart forwards 1s;
+        animation-delay: .25s;
+    }
+    .line:nth-child(3) {
+        animation: showOnStart forwards 1s;
+        animation-delay: .5s;
+    }
+
+}
+
+.launch-back {
+    background: #000;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+        opacity: .25;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .title {
+        top: 45vh;
+        position: absolute;
+        text-align: center;
+        color: white;
+        font-size: 150%;
+        text-shadow: 0 0 10px #000;
+        width: 100%;
+        
+        h1 {
+            // text-decoration: underline;
+            
+            font-family: "Roboto Slab", serif;
+            font-weight: 300;
+            opacity: 0;
+            animation: showOnStart forwards 1s;
+        }
+        
+        hr {
+            margin: 5px 0;
+            opacity: 0;
+            animation: showOnStart forwards 1s;
+            animation-delay: .15s;
+        }
+
+        h4 {
+            font-size: 90%;
+            font-family: "Roboto Slab", serif;
+            font-weight: 400;
+            opacity: 0;
+            animation: showOnStart forwards 1s;
+            animation-delay: .25s;
+        }
+    }
+}
+
+@keyframes showOnStart{
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

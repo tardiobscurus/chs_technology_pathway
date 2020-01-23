@@ -1,1 +1,131 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 200vh;
+  background: #eee;
+}
+
+.hamburger-nav {
+  position: fixed;
+  z-index: 5;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.hamburger-nav div {
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  background: white;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.hamburger-nav .line {
+  opacity: 0;
+}
+
+.hamburger-nav .line:nth-child(1) {
+  -webkit-animation: showOnStart forwards 1s;
+          animation: showOnStart forwards 1s;
+}
+
+.hamburger-nav .line:nth-child(2) {
+  -webkit-animation: showOnStart forwards 1s;
+          animation: showOnStart forwards 1s;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+.hamburger-nav .line:nth-child(3) {
+  -webkit-animation: showOnStart forwards 1s;
+          animation: showOnStart forwards 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.launch-back {
+  background: #000;
+}
+
+.launch-back img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  opacity: .25;
+  top: 0;
+  overflow: hidden;
+}
+
+.launch-back .title {
+  top: 45vh;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 150%;
+  text-shadow: 0 0 10px #000;
+  width: 100%;
+}
+
+.launch-back .title h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-animation: showOnStart forwards 1s;
+          animation: showOnStart forwards 1s;
+}
+
+.launch-back .title hr {
+  margin: 5px 0;
+  opacity: 0;
+  -webkit-animation: showOnStart forwards 1s;
+          animation: showOnStart forwards 1s;
+  -webkit-animation-delay: .15s;
+          animation-delay: .15s;
+}
+
+.launch-back .title h4 {
+  font-size: 90%;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  opacity: 0;
+  -webkit-animation: showOnStart forwards 1s;
+          animation: showOnStart forwards 1s;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+@-webkit-keyframes showOnStart {
+  from {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showOnStart {
+  from {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
