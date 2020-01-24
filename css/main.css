@@ -245,7 +245,7 @@ body {
 .content .line-break {
   margin: 70px auto;
   width: 510px;
-  border: solid black .5px;
+  border: solid black 1px;
 }
 
 .content .content2 {
