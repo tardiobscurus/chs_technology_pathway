@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 *,
 *::before,
 *::after {
@@ -8,7 +10,6 @@
 }
 
 body {
-  height: 200vh;
   background: #eee;
 }
 
@@ -201,19 +202,88 @@ body {
 }
 
 .content {
-  display: -ms-grid;
-  display: grid;
   font-size: 20px;
   max-width: 1000px;
   margin-top: 200px;
   padding: 0 10px;
-  margin: 100px auto 0 auto;
+  margin: 100px auto;
+}
+
+.content .content1 {
+  outline: solid 1px red;
+  height: 275px;
+}
+
+.content .content1 .text {
+  width: 492px;
+  margin-right: 15px;
+  float: left;
+}
+
+.content .content1 .text h1 {
+  font-family: "Playfair Display";
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.content .content1 .text hr {
+  border: 1px solid black;
+  margin: 5px 0;
+}
+
+.content .content1 .text p {
+  font-family: "Quicksand";
+  font-family: 24px;
+}
+
+.content .content1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content .line-break {
+  margin: 70px auto;
+  width: 510px;
+  border: solid black .5px;
+}
+
+.content .content2 {
+  outline: solid 1px red;
+  height: 275px;
+}
+
+.content .content2 .text {
+  width: 492px;
+  float: right;
+}
+
+.content .content2 .text h1 {
+  font-family: "Playfair Display";
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.content .content2 .text hr {
+  border: 1px solid black;
+  margin: 5px 0;
+}
+
+.content .content2 .text p {
+  font-family: "Quicksand";
+  font-family: 24px;
+}
+
+.content .content2 img {
+  float: left;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .copyright {
   text-align: center;
   padding: 10px 0;
-  margin-top: 100px;
   background-color: #ccc;
   font-family: "Roboto Slab";
   font-weight: 300;
