@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap");
 *,
 *::before,
 *::after {
@@ -13,41 +14,79 @@ body {
 
 .hamburger-nav {
   position: fixed;
+  display: block;
   z-index: 5;
   top: 20px;
   right: 25px;
   cursor: pointer;
 }
 
-.hamburger-nav .line::before {
-  content: "";
-  position: fixed;
-  background: white;
-  width: 25px;
-  height: 3px;
-  top: 0;
-  -webkit-animation: showOnStart forwards .5s;
-          animation: showOnStart forwards .5s;
-}
-
 .hamburger-nav .line {
-  position: fixed;
-  background: white;
   width: 25px;
   height: 3px;
-  -webkit-animation: showOnStart forwards .5s;
-          animation: showOnStart forwards .5s;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-.hamburger-nav .line::after {
-  content: "";
+.hamburger-nav .line:nth-child(1) {
+  -webkit-animation: showOnStart forwards 1s ease;
+          animation: showOnStart forwards 1s ease;
+}
+
+.hamburger-nav .line:nth-child(2) {
+  -webkit-animation: showOnStart forwards 1s ease;
+          animation: showOnStart forwards 1s ease;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.hamburger-nav .line:nth-child(3) {
+  -webkit-animation: showOnStart forwards 1s ease;
+          animation: showOnStart forwards 1s ease;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.navigation {
   position: fixed;
-  background: white;
-  width: 25px;
-  height: 3px;
-  top: 15px;
-  -webkit-animation: showOnStart forwards .25s;
-          animation: showOnStart forwards .25s;
+  opacity: 0;
+  z-index: 4;
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  -webkit-transition: 1000ms ease;
+  transition: 1000ms ease;
+  pointer-events: none;
+}
+
+.navigation a {
+  background: #444;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 3.5% 0;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.navigation a.home:hover {
+  background: #3D5A00;
+}
+
+.navigation a.classes:hover {
+  background: #005A4F;
+}
+
+.navigation a.info:hover {
+  background: #002A5A;
 }
 
 .launch-back {
@@ -65,7 +104,8 @@ body {
 }
 
 .launch-back .title {
-  top: 45vh;
+  z-index: 1;
+  top: 45%;
   position: absolute;
   text-align: center;
   color: white;
@@ -78,17 +118,19 @@ body {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   opacity: 0;
-  -webkit-animation: showOnStart forwards 1s;
-          animation: showOnStart forwards 1s;
+  -webkit-animation: showOnStart forwards 1s ease;
+          animation: showOnStart forwards 1s ease;
 }
 
 .launch-back .title hr {
-  margin: 5px 0;
+  width: 400px;
+  margin: 10px auto;
+  border: 1px solid white;
   opacity: 0;
-  -webkit-animation: showOnStart forwards 1s;
-          animation: showOnStart forwards 1s;
-  -webkit-animation-delay: .15s;
-          animation-delay: .15s;
+  -webkit-animation: showOnStartHr forwards 1s ease;
+          animation: showOnStartHr forwards 1s ease;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 .launch-back .title h4 {
@@ -96,10 +138,10 @@ body {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   opacity: 0;
-  -webkit-animation: showOnStart forwards 1s;
-          animation: showOnStart forwards 1s;
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s;
+  -webkit-animation: showOnStart forwards 1s ease;
+          animation: showOnStart forwards 1s ease;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 @-webkit-keyframes showOnStart {
@@ -128,10 +170,52 @@ body {
   }
 }
 
+@-webkit-keyframes showOnStartHr {
+  from {
+    width: 100px;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    width: 400px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showOnStartHr {
+  from {
+    width: 100px;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    width: 400px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .content {
-  outline: solid 1px red;
+  display: -ms-grid;
+  display: grid;
+  font-size: 20px;
   max-width: 1000px;
   margin-top: 200px;
+  padding: 0 10px;
   margin: 100px auto 0 auto;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 100px;
+  background-color: #ccc;
+  font-family: "Roboto Slab";
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
