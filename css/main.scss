@@ -4,7 +4,10 @@
 // @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rubik:300&display=swap');
 
-
+::selection {
+    background-color: black;
+    color: white;
+}
 
 *, 
 *::before, 
@@ -97,7 +100,7 @@ body {
         width: 100%;
         object-fit: cover;
         height: 100vh;
-        opacity: .25;
+        opacity: .5;
         top: 0;
         overflow: hidden;
     }
@@ -165,8 +168,9 @@ body {
 .content {
     // outline: solid 1px red;
     // display: grid;
+    height: 200vh;
     font-size: 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin-top: 200px;
     padding: 0 10px;
     margin: 100px auto;
@@ -281,23 +285,4 @@ body {
     background-color: #ccc;
     font-family: "Roboto Slab";
     font-weight: 300;
-}
-
-/*
-    Viewports
-*/
-
-@media only screen and (max-width: 425px) {
-
-    .content1 {
-        display: initial;
-        
-        img {
-            width: 565px;
-            height: 180px;
-
-        }
-
-    }
-
 }

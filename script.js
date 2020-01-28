@@ -79,7 +79,7 @@ window.onload = function() {
 
         ////////////////////////////////////////////////////////
 
-        const allLineBreaks = document.querySelectorAll(".line-break");
+        const allLineBreaks   = document.querySelectorAll(".line-break");
 
         const contentIMGOne   = document.querySelector(".content1 img");
         const contentTEXTOne  = document.querySelector(".content1 .text");
@@ -106,14 +106,15 @@ window.onload = function() {
         
     });
 
-    var random = Math.floor(Math.random() * 4);
-    if (random == 0) {
-        image.src = "images/gifs/background/pi-slices.gif";
-    } else if (random == 1) {
-        image.src = "images/gifs/background/spiral-dots.gif";
-    } else if (random == 2) {
-        image.src = "images/gifs/background/behance.gif";
-    } else if (random == 3) {
-        image.src = "images/gifs/background/space-oddity.gif"
-    }
+    // var random = Math.floor(Math.random() * 4);
+    // if (random == 0) {
+    //     image.src = "images/gifs/background/pi-slices.gif";
+    // } else if (random == 1) {
+    //     image.src = "images/gifs/background/spiral-dots.gif";
+    // } else if (random == 2) {
+    //     image.src = "images/gifs/background/behance.gif";
+    // } else if (random == 3) {
+    //     image.src = "images/gifs/background/space-oddity.gif"
+    //     image.style.opacity = ".75";
+    // }
 }
