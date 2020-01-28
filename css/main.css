@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
 *,
 *::before,
 *::after {
@@ -10,7 +10,6 @@
 }
 
 body {
-  height: 300vh;
   background: #ececeb;
 }
 
@@ -206,71 +205,124 @@ body {
 
 .content {
   font-size: 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin-top: 200px;
   padding: 0 10px;
   margin: 100px auto;
 }
 
-.content .content1 {
+.content .content1, .content .content3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
 }
 
-.content .content1 .text {
+.content .content1 .text, .content .content3 .text {
   z-index: 2;
-  background-color: #ddd;
-  width: 800px;
+  width: 595px;
   padding: 20px;
-  margin-right: 15px;
-  grid-column: 2 / -1;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin: auto 0;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.content .content1 .text h1, .content .content3 .text h1 {
+  font-family: "Playfair Display";
+  line-height: 45px;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.content .content1 .text hr, .content .content3 .text hr {
+  border: 1px solid black;
+  margin: 5px 0;
+  width: 0%;
+}
+
+.content .content1 .text p, .content .content3 .text p {
+  font-family: "Rubik";
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.content .content1 img, .content .content3 img {
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 31px;
+  height: 522px;
+  width: 276px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
-.content .content1 .text h1 {
-  font-family: "Playfair Display";
-  line-height: 35px;
-  font-weight: 400;
-  font-size: 36px;
+.content .content2 {
+  display: -ms-grid;
+  display: grid;
 }
 
-.content .content1 .text hr {
+.content .content2 .text {
+  z-index: 2;
+  width: 595px;
+  padding: 20px;
+  margin: auto 0;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.content .content2 .text h1 {
+  font-family: "Playfair Display";
+  line-height: 45px;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.content .content2 .text hr {
   border: 1px solid black;
   margin: 5px 0;
+  width: 0%;
 }
 
-.content .content1 .text p {
-  font-family: "Quicksand";
-  font-family: 24px;
+.content .content2 .text p {
+  font-family: "Rubik";
+  line-height: 30px;
+  font-size: 30px;
 }
 
-.content .content1 img {
+.content .content2 img {
   z-index: 1;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-left: 31px;
   height: 522px;
-  width: 375px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / 3;
-}
-
-.content .content1 img, .content .content1 .text {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
+  width: 276px;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
 .content .line-break {
   margin: 70px auto;
   width: 510px;
   border: solid black 1px;
+}
+
+@-webkit-keyframes showTextLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes showTextLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .copyright {
@@ -284,14 +336,13 @@ body {
 /*
     Viewports
 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
   .content1 {
-    display: block;
+    display: initial;
   }
-  .content1 img, .content1 .text {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
+  .content1 img {
+    width: 565px;
+    height: 180px;
   }
 }
 /*# sourceMappingURL=main.css.map */
