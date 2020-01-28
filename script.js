@@ -45,8 +45,8 @@ window.onload = function() {
 
         ////////////////////////////
 
-        var rate            = scroll * .3;
-        var backrate        = scroll * .5;
+        var rate              = scroll * .3;
+        var backrate          = scroll * .5;
 
         title.style.transform = `translate3d(0, ${rate}px, 0)`;
         image.style.transform = `translate3d(0, ${backrate}px, 0)`;
@@ -94,11 +94,11 @@ window.onload = function() {
             contentIMGOne.style.transform    = `translate3d(0, ${250-(scroll * .4)}px, 0)`;
             contentTEXTOne.style.transform   = `translate3d(0, ${450-(scroll * .7)}px, 0)`;
             allLineBreaks[0].style.transform = `translate3d(0, ${300-(scroll * .4)}px, 0)`;
-            contentIMG2One.style.transform  = `translate3d(0, ${350-(scroll * .4)}px, 0)`;
-            contentTEXT2One.style.transform = `translate3d(0, ${225-(scroll * .7)}px, 0)`;
+            contentIMG2One.style.transform   = `translate3d(0, ${350-(scroll * .4)}px, 0)`;
+            contentTEXT2One.style.transform  = `translate3d(0, ${225-(scroll * .7)}px, 0)`;
             allLineBreaks[1].style.transform = `translate3d(0, -${75+(scroll * .4)}px, 0)`;
-            contentIMG3One.style.transform  = `translate3d(0, -${25+(scroll * .4)}px, 0)`;
-            contentTEXT3One.style.transform = `translate3d(0, ${495-(scroll * .7)}px, 0)`;
+            contentIMG3One.style.transform   = `translate3d(0, -${25+(scroll * .4)}px, 0)`;
+            contentTEXT3One.style.transform  = `translate3d(0, ${495-(scroll * .7)}px, 0)`;
         }
         
         

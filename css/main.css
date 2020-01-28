@@ -234,7 +234,7 @@ body {
 
 .content .content1 .text hr, .content .content3 .text hr {
   border: 1px solid black;
-  margin: 5px 0;
+  margin: 5px auto;
   width: 0%;
 }
 
@@ -278,7 +278,7 @@ body {
 
 .content .content2 .text hr {
   border: 1px solid black;
-  margin: 5px 0;
+  margin: 5px auto;
   width: 0%;
 }
 
