@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
 ::-moz-selection {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 ::selection {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -79,26 +79,26 @@ body {
   display: block;
   margin-top: 15px;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   text-decoration: none;
   padding: 3.5% 0;
-  font-family: "Roboto Slab";
-  font-weight: 300;
+  font-family: "Poppins";
+  font-weight: 400;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
 }
 
 .navigation a.home:hover {
-  background: #3D5A00;
+  background: #ffd05b;
 }
 
 .navigation a.classes:hover {
-  background: #005A4F;
+  background: #b04d5d;
 }
 
 .navigation a.info:hover {
-  background: #002A5A;
+  background: #f86254;
 }
 
 .launch-back {
@@ -277,6 +277,8 @@ body {
   margin: auto 0;
   -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .content .content2 .text h1 {
@@ -332,6 +334,24 @@ body {
   }
   to {
     width: 100%;
+  }
+}
+
+@-webkit-keyframes howTextLine {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes howTextLine {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
   }
 }
 
