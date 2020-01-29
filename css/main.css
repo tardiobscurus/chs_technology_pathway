@@ -358,8 +358,64 @@ body {
 .copyright {
   text-align: center;
   padding: 10px 0;
-  background-color: #ccc;
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
+  opacity: 0;
   font-family: "Roboto Slab";
   font-weight: 300;
+  -webkit-animation: showCopyright 1500ms ease forwards;
+          animation: showCopyright 1500ms ease forwards;
+}
+
+@-webkit-keyframes showCopyright {
+  from {
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+    opacity: 1;
+  }
+}
+
+@keyframes showCopyright {
+  from {
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hideCopyright {
+  from {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    opacity: 0;
+  }
+}
+
+@keyframes hideCopyright {
+  from {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

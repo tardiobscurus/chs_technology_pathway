@@ -292,7 +292,30 @@ body {
 .copyright {
     text-align: center;
     padding: 10px 0;
-    background-color: #ccc;
+    transform: translateY(400px);
+    opacity: 0;
+    // background-color: #ccc;
     font-family: "Roboto Slab";
     font-weight: 300;
+    animation: showCopyright 1500ms ease forwards;
+}
+
+@keyframes showCopyright {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    } to {
+        transform: translateY(300px);
+        opacity: 1;
+    }
+}
+
+@keyframes hideCopyright {
+    from {
+        transform: translateY(300px);
+        opacity: 1;
+    } to {
+        transform: translateY(400px);
+        opacity: 0;
+    }
 }

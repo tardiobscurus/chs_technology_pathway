@@ -79,10 +79,17 @@ window.onload = function() {
         const textLineTwo   = document.querySelector(".content2 .text hr");
         const textLineThree = document.querySelector(".content3 .text hr");
 
+        const copyright     = document.querySelector(".copyright");
+
+        if (scroll < 1740) {
+            copyright.style.animation     = "hideCopyright 750ms ease forwards";
+        }
+
         if (scroll < 415) {
             textLineOne.style.animation   = "hideTextLine forwards 1s ease";
         } else if (scroll > 1950) {
             textLineThree.style.animation = "hideTextLine forwards 1s ease";
+            copyright.style.animation     = "showCopyright 750ms ease forwards";
         }
 
         if (scroll >= 485 && scroll <= 850) {
