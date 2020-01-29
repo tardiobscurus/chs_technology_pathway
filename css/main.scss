@@ -292,7 +292,8 @@ body {
 .copyright {
     text-align: center;
     padding: 10px 0;
-    transform: translateY(400px);
+    margin-bottom: 50px;
+    transform: translateY(-150px);
     opacity: 0;
     // background-color: #ccc;
     font-family: "Roboto Slab";
@@ -302,20 +303,20 @@ body {
 
 @keyframes showCopyright {
     from {
-        transform: translateY(400px);
+        transform: translateY(-150px);
         opacity: 0;
     } to {
-        transform: translateY(300px);
+        transform: translateY(-50px);
         opacity: 1;
     }
-}
+}   
 
 @keyframes hideCopyright {
     from {
-        transform: translateY(300px);
+        transform: translateY(-50px);
         opacity: 1;
     } to {
-        transform: translateY(400px);
+        transform: translateY(-150px);
         opacity: 0;
     }
 }
