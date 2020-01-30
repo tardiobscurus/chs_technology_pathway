@@ -316,22 +316,30 @@ body {
   margin-top: 100px;
 }
 
-.available-classes .class {
-  padding: 20px;
-  background-color: white;
-  margin: 15px 0;
-  border-radius: 5px;
+.available-classes h1 {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  text-align: center;
 }
 
-.available-classes .class img {
+.available-classes img {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.available-classes .class p {
+.available-classes p {
+  font-family: "Rubik";
   padding: 5px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.available-classes .class {
+  padding: 25px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .available-classes .classGrid {
@@ -345,37 +353,19 @@ body {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  padding: 20px;
+  padding: 25px;
   margin: 15px 0;
   border-radius: 5px;
   background-color: white;
-}
-
-.available-classes .classGrid .classContent:nth-child(1) img {
-  width: 100%;
-  height: 250px;
-}
-
-.available-classes .classGrid .classContent:nth-child(1) p {
-  padding: 5px 0;
 }
 
 .available-classes .classGrid .classContent:nth-child(2) {
   -ms-grid-column: 2;
   grid-column: 2;
-  padding: 20px;
+  padding: 25px;
   margin: 15px 0;
   border-radius: 5px;
   background-color: white;
-}
-
-.available-classes .classGrid .classContent:nth-child(2) img {
-  width: 100%;
-  height: 250px;
-}
-
-.available-classes .classGrid .classContent:nth-child(2) p {
-  padding: 5px 0;
 }
 
 @-webkit-keyframes showTextLine {
