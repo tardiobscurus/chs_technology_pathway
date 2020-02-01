@@ -348,6 +348,10 @@ body {
   grid-gap: 10px;
 }
 
+.available-classes .classGrid .classContent {
+  width: 445px;
+}
+
 .available-classes .classGrid .classContent:nth-child(1) {
   -ms-grid-column: 1;
   grid-column: 1;

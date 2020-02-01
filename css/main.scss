@@ -309,6 +309,10 @@ body {
         display: grid;
         grid-gap: 10px;
 
+        .classContent {
+            width: 445px
+        }
+
         .classContent:nth-child(1) {
             grid-column: 1;
             grid-row: 1;
