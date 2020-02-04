@@ -133,20 +133,5 @@ window.onload = function() {
             contentTEXT3One.style.transform  = `translate3d(0, ${975-(scroll * .7)}px, 0)`;
         }
         
-        
-
-        
     });
-
-    // var random = Math.floor(Math.random() * 4);
-    // if (random == 0) {
-    //     image.src = "images/gifs/background/pi-slices.gif";
-    // } else if (random == 1) {
-    //     image.src = "images/gifs/background/spiral-dots.gif";
-    // } else if (random == 2) {
-    //     image.src = "images/gifs/background/behance.gif";
-    // } else if (random == 3) {
-    //     image.src = "images/gifs/background/space-oddity.gif"
-    //     image.style.opacity = ".75";
-    // }
 }
