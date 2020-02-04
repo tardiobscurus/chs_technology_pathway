@@ -92,5 +92,12 @@
         <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Hansel Chávez</p>
 
         <script src="script.js"></script>
+        <script>
+        if (window.innerWidth <= 375) {
+            location.replace("m/home.html");
+        } else {
+            this.console.log("nothing");
+        }
+    </script>
     </body>
 </html>
