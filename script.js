@@ -132,6 +132,8 @@ window.onload = function() {
             contentIMG3One.style.transform   = `translate3d(0, ${450-(scroll * .4)}px, 0)`;
             contentTEXT3One.style.transform  = `translate3d(0, ${975-(scroll * .7)}px, 0)`;
         }
+
+        ///////////////////////////////
         
     });
 }
