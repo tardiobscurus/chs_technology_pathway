@@ -45,9 +45,9 @@ window.onload = function() {
         }
     });
 
-    const image         = document.querySelector(".launch-back img");
-
+    
     window.addEventListener("scroll", () => {
+        const image         = document.querySelector(".launch-back img");
         const title         = document.querySelector(".title");
         const line          = document.querySelectorAll(".hamburger-nav .line");
         var scroll          = window.pageYOffset;
@@ -134,6 +134,10 @@ window.onload = function() {
         }
 
         ///////////////////////////////
+        
+        const fullTabClass = document.querySelectorAll(".available-classes .class");
+
+        fullTabClass[0].style.transform = `translate3d(0, ${rate}px, 0)`;
         
     });
 }
