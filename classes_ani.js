@@ -71,26 +71,20 @@ hamburger.addEventListener("click", () => {
             }
         }
 
-        /////////////////////////////
+        ////////////////////////////
 
-        // const availableClassesImg = document.querySelectorAll(".available-classes .class img");
-        // const availableClassesH1  = document.querySelectorAll(".available-classes .class h1");
-        // const availableClassesHr  = document.querySelectorAll(".available-classes .class hr");
-        // // const availableClassesP;
+        const availableClasses  = document.querySelectorAll(".available-classes .class");
+        const images            = document.querySelectorAll(".available-classes .class img");
 
-        // availableClassesImg[0].style.transform = `translate3d(0, ${-rate * .5}px, 0)`;
-        // availableClassesH1[0].style.transform  = `translate3d(0, ${-rate * .4}px, 0)`;
-        // availableClassesHr[0].style.transform  = `translate3d(0, ${-rate * .3}px, 0)`;
+        availableClasses[0].style.transform = `translate3d(0, -${rate * .4}px, 0)`;
+        images[0].style.height              = `${rate}px`;
+        availableClasses[1].style.transform = `translate3d(0, -${rate * .4}px, 0)`;
+        images[1].style.height              = `${rate * .4}px`;
 
-        // availableClassesImg[1].style.transform = `translate3d(0, ${-rate * .7}px, 0)`;
-        // availableClassesH1[1].style.transform   = `translate3d(0, ${-rate * .6}px, 0)`
-        // availableClassesHr[1].style.transform  = `translate3d(0, ${-rate * .5}px, 0)`;
+        const classGrid         = document.querySelectorAll(".available-classes .classGrid .classContent")
 
-        const availableClasses = document.querySelectorAll(".available-classes .class");
-        availableClasses[0].style.transform = `translate3d(0, ${-rate * .4}px, 0)`;
-        availableClasses[1].style.transform = `translate3d(0, ${-rate}px, 0)`;
+        classGrid[0,1].style.transform = `translate3d(0, -${rate * .4}px, 0)`
 
-        const classContent = document.querySelectorAll(".available-classes .classGrid .classContent");
-        classContent[0].style.transform = `translate3d(${-rate}px, 0, 0)`
+
 
     });
