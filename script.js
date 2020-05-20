@@ -1,4 +1,12 @@
-// window.onload = function() {
+const loadingScreen = document.querySelector(".loading-screen");
+
+window.onload = function() {
+    loadingScreen.style.opacity = 0;
+    setInterval(() => {
+        loadingScreen.style.display = "none";
+    }, 200)
+};
+
 console.log(window.innerWidth);
 var isNotOpen       = true;
 const navigation    = document.querySelector(".navigation");
@@ -133,4 +141,3 @@ if (window.innerWidth > 1000) {
     contentTEXT3One.style.transform  = `translate3d(0, ${975-(scroll * .7)}px, 0)`;
 }
 });
-// }

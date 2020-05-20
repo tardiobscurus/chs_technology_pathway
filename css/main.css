@@ -5,13 +5,45 @@
 *,
 *::before,
 *::after {
-  /* outline: solid red 1px; */
   padding: 0;
   margin: 0;
 }
 
 body {
   background: #ececeb;
+}
+
+.loading-screen {
+  z-index: 100;
+  background-color: #010101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.loading-screen img {
+  width: 225px;
+  position: absolute;
+}
+
+.loading-screen p {
+  font-family: "Playfair Display";
+  text-transform: uppercase;
+  z-index: 102;
+  color: white;
+  text-shadow: 0 0 1  5px #010101;
 }
 
 .hamburger-nav {
