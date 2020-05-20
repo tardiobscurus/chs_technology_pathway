@@ -1,10 +1,18 @@
-const loadingScreen = document.querySelector(".loading-screen");
+document.querySelector("body").style.background = "black";
 
+const audio = document.querySelector(".backAudio");
+const loadingScreen = document.querySelector(".loading-screen");
+audio.volume = 0;
 window.onload = function() {
+
+    audio.volume = 0.05;
+    
     loadingScreen.style.opacity = 0;
+    
     setInterval(() => {
         loadingScreen.style.display = "none";
-    }, 200)
+        document.querySelector("body").style.background = "#ececeb";
+    }, 200);
 };
 
 console.log(window.innerWidth);
